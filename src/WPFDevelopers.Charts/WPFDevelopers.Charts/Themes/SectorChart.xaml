@@ -1,0 +1,39 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPFDevelopers.Charts.Controls">
+    <Style TargetType="{x:Type controls:SectorChart}">
+        <Setter Property="Width" Value="300"/>
+        <Setter Property="Height" Value="300"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type controls:SectorChart}">
+                    <Grid>
+                        <Popup x:Name="PART_Popup" 
+                               IsOpen="False"
+                               Placement="Relative" 
+                               AllowsTransparency="True">
+                            <Border Background="White" 
+                                    CornerRadius="5" 
+                                    Padding="14"
+                                    BorderThickness="0"
+                                    BorderBrush="Transparent">
+                                <StackPanel >
+                                    <Ellipse Width="20" Height="20"
+                                             Fill="{TemplateBinding Fill}"/>
+                                    <TextBlock Background="White" 
+                                               Padding="9,4,9,4" TextWrapping="Wrap" 
+                                               Text="{TemplateBinding Text}"/>
+                                </StackPanel>
+                            </Border>
+                        </Popup>
+
+                        <Canvas x:Name="PART_Canvas"  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                Width="{TemplateBinding ActualWidth}"
+                                Height="{TemplateBinding ActualHeight}">
+                        </Canvas>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
