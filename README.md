@@ -14,6 +14,7 @@
 
 ### 欢迎关注微信公众号  
 
-<img src="https://github.com/WPFDevelopersOrg/ResourcesCache/raw/main/resources/wxgzh.jpg"/>  
-### SectorChart   
+<img src="https://github.com/WPFDevelopersOrg/ResourcesCache/raw/main/resources/wxgzh.jpg"/>    
+
+### SectorChart  
 ![SectorChart](https://raw.githubusercontent.com/WPFDevelopersOrg/ResourcesCache/main/resources/WPFDevelopers.ChartsResource/SectorChart.gif)
