@@ -6,10 +6,18 @@
         xmlns:ws="https://github.com/WPFDevelopersOrg.WPFDevelopers.Minimal"
         xmlns:wsCharts="https://github.com/WPFDevelopersOrg.WPFDevelopers.Charts"
         xmlns:local="clr-namespace:WPFDevelopers.Charts.Samples"
+        xmlns:sample="clr-namespace:WPFDevelopers.Charts.Samples.SampleViews"
         mc:Ignorable="d"
-        Title="WPFDevelopers.Charts" Height="450" Width="800">
+        Title="WPFDevelopers.Charts" Height="550" Width="800">
     <Grid>
-        <wsCharts:SectorChart  ItemsSource="{Binding ItemsSource,RelativeSource={RelativeSource AncestorType=local:MainWindow}}"
-                                  Margin="30" />
+        <TabControl>
+            <TabItem Header="SectorChart">
+                <sample:SectorChartSampleView/>
+            </TabItem>
+            <TabItem Header="ArcChart">
+                <sample:ArcChartSampleView/>
+            </TabItem>
+        </TabControl>
+       
     </Grid>
 </ws:Window>

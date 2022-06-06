@@ -16,7 +16,7 @@ namespace WPFDevelopers.Charts.Controls
 {
     [TemplatePart(Name = CanvasTemplateName, Type = typeof(Canvas))]
     [TemplatePart(Name = PopupTemplateName, Type = typeof(Popup))]
-    public class SectorChart : Control
+    public partial class SectorChart : Control
     {
         const string CanvasTemplateName = "PART_Canvas";
         const string PopupTemplateName = "PART_Popup";
@@ -76,6 +76,7 @@ namespace WPFDevelopers.Charts.Controls
             base.OnApplyTemplate();
             _canvas = GetTemplateChild(CanvasTemplateName) as Canvas;
             _popup = GetTemplateChild(PopupTemplateName) as Popup;
+            DrawArc();
         }
 
         void DrawArc()
